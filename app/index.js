@@ -1,16 +1,9 @@
 import { StyleSheet, Text, View } from 'react-native';
 import React from 'react';
-import { Link } from 'expo-router';
+import { Link, Redirect } from 'expo-router';
 
 const Index = () => {
-  return (
-    <View>
-      <Text>Main Page</Text>
-
-      <Link href="/home">Go to Home</Link>
-      <Link href="/profile">Go to Profile</Link>
-    </View>
-  );
+  return <Redirect href="/home" />;
 };
 
 export default Index;

@@ -1,8 +1,10 @@
 import { Pressable, StyleSheet, Text, View } from 'react-native';
 import React from 'react';
-import { Link, router } from 'expo-router';
+import { Link, router, useLocalSearchParams } from 'expo-router';
 
 const Profile = () => {
+  const params = useLocalSearchParams();
+  console.log(params);
   return (
     <View>
       <Text>Profile</Text>
